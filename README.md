@@ -1,2 +1,2 @@
 # RxJava-Android
-RxJava-Android example
+RxJava-Android & Retrofit Example
