@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/black"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColorHint="@android:color/white"
+        app:hintTextAppearance="@style/BodySecondary">
+
+        <EditText
+            android:id="@+id/idEditText"
+            style="@style/SubheadPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:hint="아이디"
+            android:inputType="text"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/white" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@android:color/white"
+        app:hintTextAppearance="@style/BodySecondary">
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            style="@style/SubheadPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingBottom="16dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:background="#232323"
+        android:text="로그인"
+        android:textColor="@android:color/white"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/joinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:padding="8dp"
+        android:text="회원가입"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
