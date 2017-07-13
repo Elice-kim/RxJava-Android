@@ -10,7 +10,7 @@ import rx.Observable;
  * Created by elice.kim on 2017. 7. 13..
  */
 
-public interface LoginService {
+public interface UserService {
 
     @POST("login")
     Observable<LoginData.Response> requestLogin(@Body LoginData.Request loginRequest);
