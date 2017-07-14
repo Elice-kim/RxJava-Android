@@ -27,12 +27,15 @@ public class RestClient {
                 .build().create(UserService.class);
     }
 
-    private OkHttpClient getOkHttpClient() {
+    static OkHttpClient getOkHttpClient() {
+        HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
+        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+
         return new OkHttpClient.Builder()
                 .connectTimeout(59, TimeUnit.SECONDS)
                 .writeTimeout(59, TimeUnit.SECONDS)
                 .readTimeout(59, TimeUnit.SECONDS)
-                .addInterceptor(new HttpLoggingInterceptor())
+                .addInterceptor(loggingInterceptor)
                 .build();
 
     }
